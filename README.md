@@ -1,66 +1,12 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
-
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
-
-## About Laravel
-
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
-
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
-
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+<img width="960" alt="customer_edit" src="https://github.com/Kymchii/utspbkk2024_wahyu_211220050/assets/150105188/98b76281-2257-4f68-9af2-4e858d904d4f">
+<img width="960" alt="customer_index" src="https://github.com/Kymchii/utspbkk2024_wahyu_211220050/assets/150105188/e6906ce7-369f-4684-a44e-9fb1ecfd15a8">
+<img width="960" alt="customer_show" src="https://github.com/Kymchii/utspbkk2024_wahyu_211220050/assets/150105188/07cd278d-05f3-4fa8-9a77-17f5d9699509">
+<img width="960" alt="komputer_index" src="https://github.com/Kymchii/utspbkk2024_wahyu_211220050/assets/150105188/e734ebf2-df7f-4a3a-86f8-33624b82afb5">
+<img width="960" alt="customer_create" src="https://github.com/Kymchii/utspbkk2024_wahyu_211220050/assets/150105188/0afa2ed8-8f06-4047-a664-1d6d75a3de28">
+<img width="960" alt="komputer_create" src="https://github.com/Kymchii/utspbkk2024_wahyu_211220050/assets/150105188/81beddb6-8c8e-4c5f-9dda-2b2aaffd4045">
+<img width="960" alt="komputer_show" src="https://github.com/Kymchii/utspbkk2024_wahyu_211220050/assets/150105188/0c45e023-e89d-46a5-ad87-61fa0dec6947">
+<img width="960" alt="komputer_edit" src="https://github.com/Kymchii/utspbkk2024_wahyu_211220050/assets/150105188/70e7410f-5453-47e9-a41e-2db37608f124">
+<img width="960" alt="pegawai_index" src="https://github.com/Kymchii/utspbkk2024_wahyu_211220050/assets/150105188/84057425-18aa-45d0-8ccc-1891b43be6c4">
+<img width="960" alt="pegawai_create" src="https://github.com/Kymchii/utspbkk2024_wahyu_211220050/assets/150105188/c5c121c1-1a45-4b68-b174-05cbe608d5b9">
+<img width="960" alt="pegawai_show" src="https://github.com/Kymchii/utspbkk2024_wahyu_211220050/assets/150105188/6ad9df76-0846-4599-b1c7-32166a1ef42f">
+<img width="960" alt="pegawai_edit" src="https://github.com/Kymchii/utspbkk2024_wahyu_211220050/assets/150105188/37ca774b-086b-48a8-bae0-637cbaa5c305">
