@@ -11,7 +11,11 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware) {
-        //
+        $middleware->alias([
+            'adminMiddleware' => \App\Http\Middleware\AdminAccess::class,
+            'pegawaiMiddleware' => \App\Http\Middleware\PegawaiAccess::class,
+            'customersMiddleware' => \App\Http\Middleware\CustomersAccess::class,
+        ]);
     })
     ->withExceptions(function (Exceptions $exceptions) {
         //

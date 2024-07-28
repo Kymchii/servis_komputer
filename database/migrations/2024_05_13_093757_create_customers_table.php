@@ -13,6 +13,8 @@ return new class extends Migration
     {
         Schema::create('customers', function (Blueprint $table) {
             $table->unsignedBigInteger('id_customer')->unique();
+            $table->unsignedBigInteger('id_user');
+            $table->foreign('id_user')->references('id')->on('users');
             $table->string('nama_customer');
             $table->text('alamat_customer');
             $table->enum('jenis_kelamin', ['L', 'P']);

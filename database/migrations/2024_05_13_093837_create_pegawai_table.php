@@ -13,10 +13,12 @@ return new class extends Migration
     {
         Schema::create('pegawai', function (Blueprint $table) {
             $table->unsignedBigInteger('id_pegawai')->unique();
+            $table->unsignedBigInteger('id_user');
+            $table->foreign('id_user')->references('id')->on('users');
             $table->string('nama_pegawai');
             $table->text('alamat_pegawai');
             $table->enum('jenis_kelamin', ['L', 'P']);
-            $table->enum('status', ['aktif', 'non_aktif']);
+            $table->enum('status', ['Aktif', 'Non Aktif']);
             $table->timestamps();
         });
     }

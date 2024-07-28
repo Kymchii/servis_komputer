@@ -12,8 +12,12 @@ class Pegawai extends Model
     protected $table = 'pegawai';
 
     protected $fillable = [
-        'id_pegawai', 'nama_pegawai', 'alamat_pegawai', 'jenis_kelamin', 'status',
+        'id_pegawai', 'id_user', 'nama_pegawai', 'alamat_pegawai', 'jenis_kelamin', 'status',
     ];
 
     protected $primaryKey = 'id_pegawai';
+
+    public function getJenisKelaminAttribute($value) {
+        return $value === 'L' ? 'Laki-laki' : 'Perempuan';
+    }
 }

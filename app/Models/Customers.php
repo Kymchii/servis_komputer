@@ -12,8 +12,12 @@ class Customers extends Model
     protected $table = 'customers';
 
     protected $fillable = [
-        'id_customer', 'nama_customer', 'alamat_customer', 'jenis_kelamin',
+        'id_customer', 'id_user', 'nama_customer', 'alamat_customer', 'jenis_kelamin',
     ];
 
     protected $primaryKey = 'id_customer';
+
+    public function getJenisKelaminAttribute($value) {
+        return $value === 'L' ? 'Laki-laki' : 'Perempuan';
+    }
 }
