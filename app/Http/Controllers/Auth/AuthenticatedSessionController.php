@@ -32,7 +32,7 @@ class AuthenticatedSessionController extends Controller
             return redirect(route('pegawai.pegawai.dashboard'));
         } else if(Auth::user()->level == 'Customer') {
             return redirect(route('customers.customers.dashboard'));
-        } else if(Auth::user()->level == 'Admin'){
+        } else {
             return redirect(route('admin.admin.dashboard'));
         }
 

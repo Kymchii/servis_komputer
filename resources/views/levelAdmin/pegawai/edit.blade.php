@@ -41,12 +41,19 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="pwd" class="form-label">Status</label>
-                    <select class="form-control" name="status">
-                        <option value="{{old('status', $pegawai->status)}}">{{old('status', $pegawai->status)}}</option>
-                        <option value="Aktif">Aktif</option>
-                        <option value="Non Aktif">Non-Aktif</option>
+                    <label for="level" class="form-label">Status</label>
+                    <select class="form-control" name="level" id="level">
+                        @foreach(['Aktif', 'Non Aktif'] as $statusOptions)
+                        <option value="{{ $statusOptions }}" @if(old('status', $pegawai->status) == $statusOptions) selected @endif>
+                            {{ $statusOptions }}
+                        </option>
+                        @endforeach
                     </select>
+                    @error('status')
+                    <div class="alert alert-danger mt-2">
+                        {{ $message }}
+                    </div>
+                    @enderror
                 </div>
 
                 <button type="submit" class="btn btn-primary">Save</button>

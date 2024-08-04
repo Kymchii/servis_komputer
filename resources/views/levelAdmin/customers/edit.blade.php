@@ -35,7 +35,7 @@
                     <input type="text" class="form-control" id="email" name="alamat_customer" value="{{old('alamat_customer', $customers->alamat_customer)}}">
                 </div>
 
-                <div class="from-group">
+                <div class="form-group">
                     <label for="pwd" class="form-label">Jenis Kelamin</label>
                     <input type="text" class="form-control" id="email" name="jenis_kelamin" value="{{old('jenis_kelamin', $customers->jenis_kelamin)}}" readonly>
                 </div>

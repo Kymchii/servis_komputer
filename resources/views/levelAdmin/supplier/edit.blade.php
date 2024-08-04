@@ -23,9 +23,11 @@
                 <div class="form-group">
                     <label for="exampleFormControlSelect1">Merk Barang</label>
                     <select class="form-control" name="id_barang" id="exampleFormControlSelect1">
-                        @foreach ($barang as $data_barang)
-                        <option value="{{ $data_barang->id_barang }}">{{old('id_barang', $data_barang->id_barang)}}. {{old('merk_barang', $data_barang->merk_barang)}}</option>
-                        <option value="{{ $data_barang->id_barang }}">{{ $data_barang->id_barang}}. {{ $data_barang->merk_barang }}</option>
+                        @foreach ($barang as $dt_barang)
+                        <option value="{{ $dt_barang->id_barang }}" @if(old('id_barang')==$dt_barang->id_barang)selected
+                            @elseif(!old('id_barang') && $supplier->id_barang == $dt_barang->id_barang)selected
+                            @endif
+                            >{{ $dt_barang->merk_barang }}</option>
                         @endforeach
                     </select>
                 </div>

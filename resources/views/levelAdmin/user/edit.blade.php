@@ -31,13 +31,19 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="exampleFormSelect1">Level</label>
-                    <select class="form-control" name="level">
-                        <option value="{{old('level', $user->level)}}">{{old('level', $user->level)}}</option>
-                        <option value="Admin">Admin</option>
-                        <option value="Pegawai">Pegawai</option>
-                        <option value="Customer">Customer</option>
+                    <label for="level" class="form-label">Level</label>
+                    <select class="form-control" name="level" id="level">
+                        @foreach(['Admin', 'Customer', 'Pegawai'] as $levelOptions)
+                        <option value="{{ $levelOptions }}" @if(old('level', $user->level) == $levelOptions) selected @endif>
+                            {{ $levelOptions }}
+                        </option>
+                        @endforeach
                     </select>
+                    @error('level')
+                    <div class="alert alert-danger mt-2">
+                        {{ $message }}
+                    </div>
+                    @enderror
                 </div>
                 <button type="submit" class="btn btn-primary">Save</button>
             </form>

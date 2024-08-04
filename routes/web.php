@@ -19,7 +19,7 @@ use Illuminate\Support\Facades\Auth;
 use App\Http\Middleware\UserAccess;
 
 Route::get('/', function () {
-    return view('landingPage');
+    return view('index');
 });
 
 Route::get('/dashboard', function () {
@@ -54,31 +54,4 @@ Route::middleware(['auth', 'customersMiddleware'])->name('customers.')->group(fu
     Route::resource('customers/keluhan', CustomersKeluhanController::class);
     Route::get('/customers/dashboard', [HomeController::class, 'customersHome'])->name('customers.dashboard');
 });
-
-Route::get('welcome', function() {
-    return view('landingPage');
-});
-
-// Route::get('/admin/dashboard', function () {
-//     return view('levelAdmin.dashboard');
-// })->middleware(['auth', 'admin']);
-
-// Route::get('/pegawai/dashboard', function () {
-//     return view('levelPegawai.dashboard');
-// })->middleware(['auth', 'pegawai']);
-
-// Route::get('/customers/dashboard', function () {
-//     return view('levelCustomers.dashboard');
-// })->middleware(['auth', 'customers']);
-
-// Route::get('/pegawai/dashboard', [DashboardController::class, 'pegawaiDashboard'])->middleware(['auth', 'pegawai']);;
-// Route::get('/admin/dashboard', [DashboardController::class, 'adminDashboard'])->middleware(['auth', 'admin']);
-// Route::get('/customers/dashboard', [DashboardController::class, 'customersDashboard'])->middleware(['auth', 'customers']);;
-
-// Route::get('/login', function() {
-//     return view('auth.login');
-// });
-
-// Route::post('/login', [LoginController::class, 'login'])->name('login.post');
-
 

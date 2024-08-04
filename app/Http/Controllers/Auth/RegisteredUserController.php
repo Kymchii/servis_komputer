@@ -30,20 +30,30 @@ class RegisteredUserController extends Controller
     public function store(Request $request): RedirectResponse
     {
         $request->validate([
-            'name' => ['required', 'string', 'max:255'],
+            'username' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'lowercase', 'email', 'max:255', 'unique:'.User::class],
+            'level' => ['required'],
             'password' => ['required', 'confirmed', Rules\Password::defaults()],
         ]);
 
         $user = User::create([
-            'name' => $request->name,
+            'username' => $request->username,
             'email' => $request->email,
+            'level' => $request->level,
             'password' => Hash::make($request->password),
         ]);
 
         event(new Registered($user));
 
         Auth::login($user);
+
+        if(Auth::user()->level == 'Pegawai') {
+            return redirect(route('pegawai.pegawai.dashboard'));
+        } else if(Auth::user()->level == 'Customer') {
+            return redirect(route('customers.customers.dashboard'));
+        } else {
+            return redirect(route('admin.admin.dashboard'));
+        }
 
         return redirect(route('dashboard', absolute: false));
     }

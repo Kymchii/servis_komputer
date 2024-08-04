@@ -25,15 +25,20 @@
                     <input type="number" class="form-control" id="id" value="{{old('id_komputer', $komputer->id_komputer)}}" name="id_komputer" readonly>
                 </div>
 
-                <div class="from-grop">
-                    <label for="pwd" class="form-label">Merk</label>
-                    <select class="form-control" name="merk">
-                        <option value="{{old('merk', $komputer->merk)}}">{{old('merk', $komputer->merk)}}</option>
-                        <option value="asus">Asus</option>
-                        <option value="acer">Acer</option>
-                        <option value="del">Del</option>
-                        <option value="lain">Lainnya</option>
+                <div class="form-group">
+                    <label for="level" class="form-label">Merk</label>
+                    <select class="form-control" name="merk" id="level">
+                        @foreach(['asus', 'acer', 'del', 'lain'] as $merkOptions)
+                        <option value="{{ $merkOptions }}" @if(old('merk', $komputer->merk) == $merkOptions) selected @endif>
+                            {{ $merkOptions }}
+                        </option>
+                        @endforeach
                     </select>
+                    @error('merk')
+                    <div class="alert alert-danger mt-2">
+                        {{ $message }}
+                    </div>
+                    @enderror
                 </div>
 
                 <div class="from-grop">
